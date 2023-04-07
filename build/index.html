@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ISRO Rocket</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="./js/app.js"></script>
+	</head>
+	<body class="min-h-screen bg-slate-50 dark:bg-slate-950 dark:text-slate-50">
+		<header class="sticky top-0 z-10 bg-slate-100 dark:bg-slate-900 dark:text-slate-100">
+			<section class="relative mx-auto flex max-w-4xl items-center justify-between p-4">
+				<a href="#hero" class="flex items-center space-x-4">
+					<img class="h-10" src="./img/Flag_of_India.webp" alt="india-flag" />
+					<h1 class="text-4xl font-normal">ISRO</h1>
+				</a>
+				<button id="hamburger-menu" class="relative h-10 w-10 text-3xl focus:outline-none md:hidden">
+					<div
+						class="absolute top-5 mx-auto h-1 w-8 bg-slate-800 transition-all duration-500 before:absolute before:-top-3 before:left-0 before:h-1 before:w-8 before:bg-slate-800 before:transition-all before:duration-500 after:absolute after:left-0 after:top-3 after:h-1 after:w-8 after:bg-slate-800 after:transition-all after:duration-500 dark:bg-slate-200 dark:before:bg-slate-200 dark:after:bg-slate-200"
+					></div>
+				</button>
+				<nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+					<a href="#rockets" class="rounded-md p-3 hover:bg-slate-200 dark:hover:bg-slate-800">Our Rockets</a>
+					<a href="#testimonials" class="rounded-md p-3 hover:bg-slate-200 dark:hover:bg-slate-800">Testimonials</a>
+					<a href="#contact" class="rounded-md p-3 hover:bg-slate-200 dark:hover:bg-slate-800">Contact</a>
+				</nav>
+			</section>
+			<section
+				id="nav-mobile"
+				class="section-min-height absolute w-full translate-y-[120%] bg-slate-100 text-4xl transition-all duration-300 dark:bg-slate-900"
+			>
+				<nav class="absolute top-20 flex w-full flex-col items-center gap-14">
+					<a href="#hero">Home</a>
+					<a href="#rockets">Our Rockets</a>
+					<a href="#testimonials">Testimonials</a>
+					<a href="#contact">Contact Us</a>
+					<a href="#footer">Legal</a>
+				</nav>
+			</section>
+		</header>
+		<main class="mx-auto max-w-4xl">
+			<section
+				id="hero"
+				class="widescreen:section-min-height largescreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
+			>
+				<article class="sm:w-1/2">
+					<h2 class="max-w-md text-center text-4xl font-bold text-slate-800 dark:text-slate-50 sm:text-left sm:text-5xl">
+						We Boldly Go <span class="text-amber-600 dark:text-amber-500">Where No Rocket</span> Has Gone Before...
+					</h2>
+					<p class="mt-4 max-w-md text-center text-2xl text-slate-600 dark:text-slate-400 sm:text-left">
+						We're building rockets for the next century today. From the Moon to Mars, Jupiter and beyond...
+					</p>
+					<p class="mt-4 max-w-md text-center text-2xl text-slate-600 dark:text-slate-400 sm:text-left">Think space, Think ISRO.</p>
+				</article>
+				<img class="w-1/2" src="./img/rocketdab.png" alt="Rocket Dab" />
+			</section>
+			<hr class="mx-auto h-px max-w-md border-0 bg-slate-400 dark:bg-slate-500" />
+
+			<section id="rockets" class="mx-auto my-12 scroll-m-24 p-6">
+				<h1 class="mb-14 text-center text-4xl text-slate-800 dark:text-slate-100 sm:text-5xl">Our Rockets</h1>
+				<ul class="mx-auto flex list-none flex-col items-center gap-8 sm:flex-row sm:justify-center">
+					<li class="flex w-2/3 flex-col items-center rounded-xl border-2 border-slate-500 p-4 text-center shadow-xl">
+						<img class="w-2/3" src="./img/rocketman.png" alt="Explorer" />
+						<h3 class="mt-4 text-2xl font-bold">Explorer</h3>
+						<p class="text-xl text-slate-700 dark:text-slate-400 sm:hidden">Affordable Exploration</p>
+						<h3 class="hidden text-xl text-slate-700 dark:text-slate-400 sm:block">$</h3>
+					</li>
+					<li class="flex w-2/3 flex-col items-center rounded-xl border-2 border-slate-500 p-4 text-center shadow-xl">
+						<img class="w-2/3" src="./img/rocketride.png" alt="Adventurer" />
+						<h3 class="mt-4 text-2xl font-bold">Adventurer</h3>
+						<p class="text-xl text-slate-700 dark:text-slate-400 sm:hidden">Best Selling Rocket!</p>
+						<h3 class="hidden text-xl text-slate-700 dark:text-slate-400 sm:block">$$</h3>
+					</li>
+					<li class="flex w-2/3 flex-col items-center rounded-xl border-2 border-slate-500 p-4 text-center shadow-xl">
+						<img class="w-2/3" src="./img/rocketlaunch.png" alt="Infinity" />
+						<h3 class="mt-4 text-2xl font-bold">Infinity</h3>
+						<p class="text-xl text-slate-700 dark:text-slate-400 sm:hidden">Luxery Starship</p>
+						<h3 class="hidden text-xl text-slate-700 dark:text-slate-400 sm:block">$$$</h3>
+					</li>
+				</ul>
+			</section>
+			<hr class="mx-auto h-px max-w-md border-0 bg-slate-400 dark:bg-slate-500" />
+
+			<section id="testimonials" class="my-12 max-w-full scroll-m-20 p-6 text-xl sm:text-lg">
+				<h1 class="mb-6 text-center text-4xl text-slate-800 dark:text-slate-100 sm:text-5xl">Testimonials</h1>
+				<figure class="mx-auto my-12">
+					<blockquote class="relative rounded-md bg-amber-500 p-5 font-medium dark:bg-amber-600 dark:text-slate-950">
+						<p
+							class="p-7 before:absolute before:left-0 before:top-0 before:transform before:font-serif before:text-9xl before:text-orange-700 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-y-3 after:transform after:font-serif after:text-9xl after:text-orange-700 after:content-['\201D'] dark:before:text-orange-800 dark:after:text-orange-800"
+						>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed sequi totam iure nobis magnam deserunt ducimus sapiente aut
+							quo? Commodi dolores harum qui sit ipsa reiciendis deleniti eveniet aut est.
+						</p>
+					</blockquote>
+					<figcaption class="m-1 text-right italic text-slate-600 dark:text-slate-300">&#8212; John Doe</figcaption>
+				</figure>
+				<figure class="mx-auto my-12">
+					<blockquote class="relative rounded-md bg-amber-500 p-5 font-medium dark:bg-amber-600 dark:text-slate-950">
+						<p
+							class="p-7 before:absolute before:left-0 before:top-0 before:transform before:font-serif before:text-9xl before:text-orange-700 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-y-3 after:transform after:font-serif after:text-9xl after:text-orange-700 after:content-['\201D'] dark:before:text-orange-800 dark:after:text-orange-800"
+						>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed sequi totam iure nobis magnam deserunt ducimus sapiente aut
+							quo? Commodi dolores harum qui sit ipsa reiciendis deleniti eveniet aut est.
+							<q class="italic">Lorem ipsum dolor sit amet</q> consectetur adipisicing elit. Quaerat, magnam similique itaque nam
+							dolores corporis iste praesentium aliquam aut nulla perspiciatis deleniti, reprehenderit eaque ad quia veritatis maiores
+							error fugit.
+						</p>
+					</blockquote>
+					<figcaption class="m-1 text-right italic text-slate-600 dark:text-slate-300">&#8212; Jane B. Doe</figcaption>
+				</figure>
+				<figure class="mx-auto my-12">
+					<blockquote class="relative rounded-md bg-amber-500 p-5 font-medium dark:bg-amber-600 dark:text-slate-950">
+						<p
+							class="p-7 before:absolute before:left-0 before:top-0 before:transform before:font-serif before:text-9xl before:text-orange-700 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-y-3 after:transform after:font-serif after:text-9xl after:text-orange-700 after:content-['\201D'] dark:before:text-orange-800 dark:after:text-orange-800"
+						>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed sequi totam iure nobis magnam deserunt ducimus sapiente aut
+							quo? Commodi dolores harum qui sit ipsa reiciendis deleniti eveniet aut est. &#8212;Lorem ipsum dolor, sit amet
+							consectetur adipisicing elit. Ipsa ea, illum impedit porro amet ratione eaque aliquam, corrupti ad nam aliquid.
+							&#8212;fugiat cumque voluptatibus, <q class="font-normal italic">dicta excepturi rem quaerat voluptatum sed!</q>
+						</p>
+					</blockquote>
+					<figcaption class="m-1 text-right italic text-slate-600 dark:text-slate-300">&#8212; John Michel</figcaption>
+				</figure>
+			</section>
+			<hr class="mx-auto h-px max-w-md border-0 bg-slate-400 dark:bg-slate-500" />
+
+			<section id="contact" class="mx-auto my-12 scroll-m-20 p-6">
+				<h1 class="mb-6 text-center text-4xl text-slate-800 dark:text-slate-100 sm:text-5xl">Contact Us</h1>
+				<form action="" class="mx-auto flex max-w-full flex-col items-start gap-5 text-lg font-medium">
+					<label for="subject">Subject:</label>
+					<input
+						id="subject"
+						name="subject"
+						type="text"
+						required
+						minlength="5"
+						maxlength="30"
+						placeholder="Your Subject"
+						class="w-full rounded-md border-2 border-slate-600 p-1 text-lg text-slate-900 dark:border-none"
+					/>
+					<label for="message">Message:</label>
+					<textarea
+						id="message"
+						name="message"
+						required
+						cols="30"
+						rows="10"
+						placeholder="Your message"
+						class="w-full rounded-md border-2 border-slate-600 p-1 text-lg text-slate-900 dark:border-none"
+					></textarea>
+					<button
+						class="rounded-md border-2 border-orange-600 bg-orange-500 px-4 py-2 text-xl text-slate-100 hover:border-2 hover:border-orange-700 hover:bg-orange-600 dark:border-transparent dark:bg-orange-600 dark:hover:border-orange-600 dark:hover:bg-orange-500"
+					>
+						Submit
+					</button>
+				</form>
+			</section>
+		</main>
+		<footer id="footer" class="scroll-mb-10 bg-slate-100 font-medium dark:bg-slate-900 dark:text-slate-100">
+			<section class="mx-auto flex max-w-4xl place-content-between p-5">
+				<address>
+					<h1>ISRO Space Agency, Inc.</h1>
+					25-B, Erumapatti<br />
+					Perunduai, Erode 560011<br />
+					Email: <a class="hover:underline" href="mailto:isro@mail.com">isro@mail.com</a><br />
+					Phone: <a class="hover:underline" href="tel:+000000">000000</a>
+				</address>
+				<nav class="hidden flex-col gap-2 sm:flex" aria-label="footer">
+					<a class="hover:underline" href="#rockets">Our Rockets</a>
+					<a class="hover:underline" href="#testimonials">Testimonials</a>
+					<a class="hover:underline" href="#contact">Contact Us</a>
+				</nav>
+				<div class="flex flex-col place-self-end text-right sm:place-self-start">
+					<p>
+						Copyright &copy;
+						<span>2022</span>
+					</p>
+					<p>All Rights Reserved</p>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>
