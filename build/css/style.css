@@ -1298,7 +1298,7 @@ video {
   }
 }
 
-@media (max-aspect-ratio: 425/850) {
+@media (max-aspect-ratio: 550/850) {
   .largescreen\:section-min-height {
     min-height: calc(100vh - 72px);
   }
